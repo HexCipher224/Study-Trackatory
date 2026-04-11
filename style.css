@@ -1,6 +1,22 @@
-body {
+.bg-success {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+}
+.wrapper {
+    border-color: black;
+    border: 2px;
+    border-style: solid;
+    border-radius: 12px;
+    box-shadow: 5px 5px 20px black;
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 20px;
+    transition: opacity 0.2s,
+}
+.wrapper:hover {
+    opacity: 0.9;
+    
 }

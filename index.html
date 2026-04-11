@@ -5,40 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Study Tracker</title>
     <link rel="stylesheet" href="style.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
 </head>
 <body>
-    <div class="wrapper">
-        <form action="">
-            <h1>login</h1>
-            <div class="input-box">
-                <input type="text" placeholder="Username" required>
-                <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  
-fill="currentColor" viewBox="0 0 24 24" >
-<!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-<path d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5m0-8c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3M4 22h16c.55 0 1-.45 1-1v-1c0-3.86-3.14-7-7-7h-4c-3.86 0-7 3.14-7 7v1c0 .55.45 1 1 1m6-7h4c2.76 0 5 2.24 5 5H5c0-2.76 2.24-5 5-5"></path>
-</svg>
-            </div>
-            <div class="input-box">
-                <input type="password" placeholder="Password" required>
-                <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  
-fill="currentColor" viewBox="0 0 24 24" >
-<!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-<path d="M6 22h12c1.1 0 2-.9 2-2v-9c0-1.1-.9-2-2-2h-1V7c0-2.76-2.24-5-5-5S7 4.24 7 7v2H6c-1.1 0-2 .9-2 2v9c0 1.1.9 2 2 2M9 7c0-1.65 1.35-3 3-3s3 1.35 3 3v2H9zm-3 4h12v9H6z"></path>
-</svg>
-            </div>
-            <div class="Remember-forget">
-                <label><input type="checkbox">Remember me</label>
-                <br>
-                <a href="#">Forgot password</a>
-            </div>
-            <button type="submit" class="btn">login</button>
-            <div class="register-link">
-                <p>Don't have an account? </p><a href="#">Register</a>
-            </div>
-        </form>
-    </div>
+    <h1>Login</h1>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <div class="wrapper">
+        <div class="username">
+            <p>Username</p>
+            <input class="username" type="Username" placeholder="Enter Username">
+            <i class="bi bi-person"></i>
+
+        </div>
+        <div class="password">
+            <p>Password</p>
+            <input class="Password" type="password" placeholder="Enter Password"><i class="bi bi-lock"></i>
+        </div>
+
+        <a href="#" target="_blank">Forgot Password?</a>
+
+        <div class="Remember-me">
+            <input class="Remember-me" type="checkbox">Remember me
+        </div>
+
+        <div class="btn">
+            <button type="submit" placeholder="Login">Login</button>
+        </div>
+
+        <div class="Create-Acc">
+            <button type="button" placeholder="Create Account">Create Account
+        </div>
+
+    </div>
 </body>
 </html>

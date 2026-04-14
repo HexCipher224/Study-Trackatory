@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create Study Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-success" data-public="true" style="padding-top: 70px;">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Study Tracker</a>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="courses.html" class="nav-link text-white px-0">Courses</a>
+                    <a href="tracker.html" class="nav-link text-white px-0">Tracker</a>
+                    <a href="index.html" data-logout="true" class="nav-link text-white px-0">Logout</a>
+                </div>
+        </div>
+    </nav>
+
+    <main class="wrapper" aria-label="create account form">
+        <img class="Hero-img" src="Image/Assets/Pasted image.png" width="100" alt="Study Tracker logo">
+        <h1>Create account</h1>
+        <p class="subtitle">Add your username and pick the program you want to follow.</p>
+        <form id="registerForm" class="login-form">
+            <label for="newUsername">Username</label>
+            <div class="input-row">
+                <input id="newUsername" name="username" type="text" placeholder="Choose a username">
+                <i class="bi bi-person input-icon" aria-hidden="true"></i>
+            </div>
+
+            <label for="newEmail">Email</label>
+            <div class="input-row">
+                <input id="newEmail" name="email" type="email" placeholder="you@example.com">
+            </div>
+
+            <label for="newCourse">Focus area</label>
+            <div class="input-row">
+                <select id="newCourse" name="course">
+                    <option value="software">Software Engineering</option>
+                    <option value="data">Data Science</option>
+                    <option value="ai">Artificial Intelligence</option>
+                </select>
+            </div>
+
+            <label for="newPassword">Password</label>
+            <div class="input-row">
+                <input id="newPassword" name="password" type="password" placeholder="Create password">
+            </div>
+
+            <div class="helper-row">
+                <small class="text-white-50">This form is for display—no account is actually saved.</small>
+            </div>
+
+            <div id="registerMessage" class="status-message"></div>
+            <div class="form-actions">
+                <button type="submit" class="primary">Create profile</button>
+                <a href="index.html" class="secondary secondary-link">Back to login</a>
+            </div>
+        </form>
+</main>
+    <script src="index.js" defer></script>
+</body>
+</html>

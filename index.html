@@ -16,47 +16,49 @@
 </head>
 <body class="bg-success" style="padding-top: 70px;">
 
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-     <div class="container-fluid">
-
-     <a class="navbar-brand" href="#">Study Tracker</a>
-
-     <div class="ms-auto">
-      <a href="courses.html" class="nav-link d-inline text-white me-3">Courses</a>
-      <a href="tracker.html" class="nav-link d-inline text-white me-3">Tracker</a>
-      <a href="login.html" class="nav-link d-inline text-danger">Logout</a>
-      </div>
-      </div>
-     </nav>
-
-    <div class="wrapper">
-        <img class="Hero-img" src="Image/Assets/Pasted image.png" width="100px">
-        <h1>Login</h1>
-        <div class="username">
-            <p class="Description">Username</p>
-            <input class="username" type="Username" placeholder="Enter Username">
-            <i class="bi bi-person"></i>
-
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Study Tracker</a>
+            <div class="d-flex align-items-center gap-3">
+                <a href="courses.html" class="nav-link text-white px-0">Courses</a>
+                <a href="tracker.html" class="nav-link text-white px-0">Tracker</a>
+                <a href="index.html" data-logout="true" class="nav-link text-white px-0">Logout</a>
+            </div>
         </div>
-        <div class="password">
-            <p class="Description2">Password</p>
-            <input class="Password" type="password" placeholder="Enter Password"><i class="bi bi-lock"></i>
-        </div>
+    </nav>
 
-        <a href="#" target="_blank">Forgot Password?</a>
+    <main class="wrapper" aria-label="login form">
+        <img class="Hero-img" src="Image/Assets/Pasted image.png" width="100" alt="Study Tracker logo">
+        <h1>Welcome back</h1>
+        <p class="subtitle">Log in to track lessons, set reminders, and celebrate streaks.</p>
+        <p class="study-tip">Tip: Review yesterday's notes before studying a new module.</p>
+        <form id="loginForm" class="login-form">
+            <label for="loginUsername">Username</label>
+            <div class="input-row">
+                <input id="loginUsername" name="username" type="text" placeholder="Enter username">
+                <i class="bi bi-person input-icon" aria-hidden="true"></i>
+            </div>
 
-        <div class="Remember-me">
-            <input class="Remember-me" type="checkbox">Remember me
-        </div>
+            <label for="loginPassword">Password</label>
+            <div class="input-row">
+                <input id="loginPassword" name="password" type="password" placeholder="Enter password">
+            </div>
 
-        <div class="btn">
-            <button type="button" placeholder="Login">Login</button>
-        </div>
+            <div class="helper-row">
+                <label class="remember-label">
+                    <input type="checkbox">
+                    Remember me
+                </label>
+                <small class="link-button">Forgot password?</small>
+            </div>
 
-        <div class="Create-Acc">
-            <button type="button" placeholder="Create Account">Create Account</button>
-        </div>
-
-    </div>
+            <div id="loginMessage" class="status-message"></div>
+            <div class="form-actions">
+                <button type="submit" class="primary">Login</button>
+                <a href="register.html" class="secondary secondary-link">Create account</a>
+            </div>
+        </form>
+    </main>
+    <script src="index.js" defer></script>
 </body>
 </html>

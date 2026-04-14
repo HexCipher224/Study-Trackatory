@@ -5,25 +5,6 @@
     min-height: 100vh;
 }
 
-.wrapper {
-    border-color: black;
-    border: 2px;
-    border-style: solid;
-    border-radius: 12px;
-    box-shadow: 5px 5px 20px black;
-    width: 500px;
-    padding-left: 60px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-right: 60px;
-    transition: opacity 0.2s,
-        transform 0.3s;
-}
-.wrapper:hover {
-    opacity: 0.9;
-    transform: scale(1.01);
-}
-
 .Hero-img {
     display: block;
     margin: auto;
@@ -32,24 +13,205 @@
     margin-bottom: 0;
 }
 
+.wrapper {
+    max-width: 480px;
+    background: #0b4717;
+    padding: 40px 48px;
+    color: #f7f9fb;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
 .wrapper h1 {
-    margin-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
     text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-    font-weight: bold;
-    margin-bottom: 0;
 }
 
-.Description {
-    margin-top: 20px;
-    margin-bottom: 0;
+.subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #d8f1d2;
 }
-.Description2 {
+
+.study-tip {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    color: #fff8c4;
+}
+
+.login-form,
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.login-form label,
+.register-form label {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.input-row {
+    position: relative;
+}
+
+.input-row input {
+    width: 100%;
+    padding: 10px 40px 10px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.07);
+    color: #fff;
+}
+
+.input-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.icon-button {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    color: #fff;
+}
+
+.helper-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.remember-label input {
+    margin-right: 6px;
+}
+
+.link-button {
+    border: none;
+    background: transparent;
+    color: #b6f1b0;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.status-message {
+    min-height: 24px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+}
+
+.form-actions button,
+.secondary-link {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form-actions .primary {
+    background: #ffd45d;
+    color: #1a1a1a;
+}
+
+.form-actions .secondary {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: #fff;
+}
+
+.secondary-link {
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-text {
+    font-size: 0.8rem;
+    color: #ffb3b3;
+    min-height: 18px;
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    z-index: 10;
+}
+
+.modal-panel {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 28px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.modal-panel h2 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.register-form input,
+.register-form select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccd1d8;
+    font-size: 1rem;
+}
+
+.register-form button {
     margin-top: 10px;
-    margin-bottom: 0;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #2563eb;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
 }
 
-.btn ,
-.Create-Acc {
-    display: inline-block;
+.helper-text {
+    margin: 8px 0 0;
+    font-size: 0.85rem;
+    color: #374151;
+    min-height: 20px;
+}
+
+.hidden {
+    display: none;
 }
